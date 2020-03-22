@@ -11,7 +11,7 @@ const pri = "/item/search/movie/info";
 
 
 if (url.indexOf(pro) != -1) {
-    obj.data.coin = 99999;
+    obj.data.coin = 9999900;
     body = JSON.stringify(obj);
 } 
 if (url.indexOf(vip) != -1) {
