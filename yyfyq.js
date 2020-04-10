@@ -12,7 +12,7 @@ hostname = app.xunjiepdf.com,
 */
 
 let obj = JSON.parse($response.body);
-obj.userinfo.uid = Tom
+obj.userinfo.uid = "Tom"
 obj.userinfo.vip = [{
       "id": 123456,
       "auth_type": 1,
