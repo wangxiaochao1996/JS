@@ -3,7 +3,7 @@
 
 
 [rewrite_local]
-# Xunjie Unlock annual subscriptions （by LTribe）
+
 https\:\/\/app\.xunjiepdf\.com\/api\/v4\/memprofile url script-response-body yzw.js
 
 [mitm]
