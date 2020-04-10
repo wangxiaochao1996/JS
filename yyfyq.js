@@ -14,7 +14,7 @@ hostname = app.xunjiepdf.com,
 let obj = JSON.parse($response.body);
 obj.userinfo.uid = Tom
 obj.userinfo.vip = [{
-      "id": 00000001,
+      "id": 123456,
       "auth_type": 1,
       "auth_value": 4102469002
     }];
