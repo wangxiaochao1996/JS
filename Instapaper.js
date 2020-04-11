@@ -3,9 +3,13 @@
 [mitm]
 hostname = www.instapaper.com,
 */
+
 var body = $response.body;
+function re(reg, str) {
+  body = body.replace(reg, str);
+}
 var reg1 = /ipsubexp=/g;
 var reg2 = /ipsub=\d/g;
-body = body.replace(reg1, 'ipsubexp=1646033923');
-body = body.replace(reg2, 'ipsub=1');
+re(reg1, 'ipsubexp=1646033923');
+re(reg2, 'ipsub=1');
 $done(body);
