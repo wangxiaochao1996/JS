@@ -28,6 +28,10 @@ if (url.indexOf(path1) != -1) {
 }
 if (url.indexOf(path2) != -1) {
   obj["data"]["isMember"] = true;
+obj.data["vipInfo"] = {
+   "effectiveTime": 1586895236,
+   "deadlineTime": 3732812036
+  }
 }
 if (url.indexOf(path3) != -1) {
   delete obj["data"]["advertisement"];
