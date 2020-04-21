@@ -1,13 +1,13 @@
 /*
-同桌游戏（头号玩家）解锁VIP及匹配次数
-https\:\/\/api\.app\.z8dns\.com
+同桌游戏（头号玩家）解锁vip及匹配次数
+https\:\/\/api\.app\.z8dns\.com\/(normal_match\/left_count|vip\/status)
 hostname = api.app.z8dns.com
 */
 var body = $response.body;
 var url = $request.url;
 var obj = JSON.parse(body);
-const pro = '/normal_match/left_count';
-const vip = '/vip/status';
+const pro = 'normal_match/left_count';
+const vip = 'vip/status';
 if (url.indexOf(pro) != -1) {
     obj.left_count = 99;
     body = JSON.stringify(obj);
@@ -21,4 +21,6 @@ obj= {
 body = JSON.stringify(obj);
 };
 $done({body});
+
+
 
