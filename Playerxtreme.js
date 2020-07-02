@@ -1,6 +1,6 @@
 /*
 
-playerxtreme.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/playerxtreme.js,script-update-interval=0,type=http-response,pattern=^https:\/\/secure\.istreamer\.com\/backend$
+playerxtreme.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/playerxtreme.js,script-update-interval=0,type=http-response,pattern=^https:\/\/secure\.istreamer\.com\/backend2
 
 */
 var obj = JSON.parse($response.body);
