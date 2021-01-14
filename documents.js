@@ -1,30 +1,24 @@
 /*
 
-Quantumult X 脚本：
+#圈x破解内购Document
+^https:\/\/license\.pdfexpert\.com\/api\/.*\/documents\/subscription\/(refresh$|check$) url script-response-body documents.js
 
-By LTribe：
-Documents Download Link：http://t.cn/AiCd5Ac4
-
-[rewrite_local]
-# Documents 解锁内购年订阅
-^https?:\/\/license\.pdfexpert\.com\/api\/.*\/documents\/subscription\/(check$|refresh$) url script-response-body Documents.js
-
-[mitm]
-hostname = *.pdfexpert.com,
+hostname = license.pdfexpert.com
 
 */
 
-let obj = JSON.parse($response.body);
 
-obj = {
-  "isEligibleForIntroPeriod":true,
-  "originalTransactionId":"730000355073823",
-  "subscriptionExpirationDate":"02:33 19/08/2020",
-  "subscriptionState":"active",
-  "subscriptionReceiptId":"1559207582000",
-  "isDocuments6User":true,
-  "subscriptionAutoRenewStatus":"autoRenewOff",
-  "isInGracePeriod":true
+var obj= {
+  "originalTransactionId" : "20000625420102",
+  "subscriptionState" : "trial",
+  "isInGracePeriod" : false,
+  "subscriptionExpirationDate" : "17:48 25/11/2099",
+  "isDocuments6User" : true,
+  "isEligibleForIntroPeriod" : false,
+  "subscriptionAutoRenewStatus" : "autoRenewOff",
+  "subscriptionReceiptId" : "1530908572000"
 };
 
 $done({body: JSON.stringify(obj)});
+
+// Descriptions
